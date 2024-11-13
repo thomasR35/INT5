@@ -1,4 +1,3 @@
-@import "variable.scss";
 * {
   box-sizing: border-box;
 }
@@ -9,11 +8,11 @@ html {
 .container {
   max-width: 1140px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0;
 }
 // Typography
 body {
-  font-size: 15px;
+  font-size: 1.6rem;
   line-height: 1.5;
   font-family: "Open Sans", sans-serif;
   background-color: #eee;
@@ -24,26 +23,45 @@ h2,
 h3 {
   font-family: "Raleway", sans-serif;
   color: #333;
+  font-weight: 400;
 }
 h1 {
   font-size: 36px;
 }
 h2 {
   font-size: 24px;
+  &__:after {
+    content: "\25CF";
+    color: #555;
+  }
 }
 h3 {
   font-size: 18px;
 }
+.icon-user,
+.icon-data,
+.icon-stack,
+.icon-phone,
+.icon-display,
+.icon-clock {
+  font-size: 2.5rem;
+  padding-right: 1em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
 // Header Section
 .header {
   background-color: #0c6588;
+  background-image: url(../images/header.jpg);
+  background-position: center;
   color: #e2f7ff;
-  padding: 20px 0;
+  padding: 0;
 
   &__accessibility,
   &__main,
   &__nav {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
   }
@@ -67,41 +85,47 @@ h3 {
     .logo {
       display: flex;
       align-items: center;
+      flex-direction: column;
 
       img {
-        max-width: 50px;
+        max-width: 5em;
       }
 
       .logo__brand-name {
-        font-weight: bold;
-        font-size: 1.5em;
-        margin-left: 10px;
+        font-size: 3.6rem;
+        margin: 0;
       }
 
       .logo__brand-desc {
         font-size: 0.9em;
         color: #e2f7ff;
-        margin-left: 10px;
+        margin: 0;
+        margin-bottom: 1em;
       }
     }
     .session {
       display: flex;
-      gap: 20px;
+      gap: 2rem;
 
       .session__account,
       .session__cart {
         cursor: pointer;
+        justify-items: center;
         color: #e2f7ff;
-        font-size: 1em;
       }
     }
   }
   .nav {
     .nav__button {
+      display: flex;
+      margin: auto;
+      width: 100%;
+      justify-content: center;
+      vertical-align: middle;
       background-color: #e2f7ff;
       color: #0c6588;
       border: none;
-      padding: 10px 20px;
+      padding: 0;
       font-size: 1em;
       cursor: pointer;
       &:hover {
@@ -111,6 +135,14 @@ h3 {
   }
 }
 // Main Content
+.anchors {
+  list-style: none;
+  padding-left: 0;
+  &__a {
+    color: #0c6588;
+    text-decoration: underline;
+  }
+}
 .main-content {
   background-color: #fff;
   padding: 20px;
@@ -122,72 +154,102 @@ h3 {
     flex-wrap: wrap;
   }
   &__tag {
-    background-color: #e2f7ff;
-    color: #0c6588;
-    padding: 5px 10px;
-    border-radius: 3px;
+    white-space: nowrap;
+    position: relative;
+    margin: 0 5px 0 10px;
+    display: inline-block;
+    height: 25px;
+    border-radius: 0 5px 5px 0;
+    padding: 0 25px 0 15px;
+    background: #ccc;
+    border: 0 solid #c7d2d4;
+    color: #999;
+    line-height: 23px;
   }
-  &__content {
+  &__tag:after {
+    position: absolute;
+    right: 0;
+    margin: 1px 7px;
+    font-weight: bold;
+    font-size: 19px;
+  }
+  &__tag:before {
+    position: absolute;
+    content: "\25CF";
+    color: white;
+    text-shadow: 0 0 1px #333;
+    font-size: 11px;
+    line-height: 0px;
+    text-indent: 12px;
+    left: -15px;
+    width: 1px;
+    height: 0px;
+    border-right: 14px solid #ccc;
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+  }
+}
+.content {
+  display: flex;
+  gap: 20px;
+}
+.slider {
+  &__current {
+    max-width: 100%;
+    height: auto;
+  }
+  &__disclaimer {
+    font-size: 0.8em;
+    color: #555;
+  }
+  &__all-photos-wrapper {
     display: flex;
-    gap: 20px;
-  }
-  .slider {
-    &__current {
-      max-width: 100%;
+    gap: 10px;
+    flex-wrap: wrap;
+    .slider__little {
+      width: 60px;
       height: auto;
-    }
-    &__disclaimer {
-      font-size: 0.8em;
-      color: #555;
-    }
-    &__all-photos-wrapper {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-      .slider__little {
-        width: 60px;
-        height: auto;
-        cursor: pointer;
-      }
-    }
-  }
-  &__summary {
-    .intro__purchase-details {
-      background-color: #f7f7f7;
-      padding: 10px;
-      border-radius: 5px;
-      margin-bottom: 15px;
-      p {
-        margin: 0;
-      }
-      .fs-little {
-        font-size: 0.8em;
-        color: #555;
-      }
-      .add-to-cart {
-        background-color: #0c6588;
-        color: #fff;
-        border: none;
-        padding: 10px 15px;
-        cursor: pointer;
-        margin-top: 10px;
-        &:hover {
-          background-color: #000;
-        }
-      }
-      .add-to-wishlist {
-        color: #555;
-        cursor: pointer;
-        font-size: 0.9em;
-        margin-top: 10px;
-      }
-    }
-    .intro__main-specs {
-      list-style-type: disc;
-      padding-left: 20px;
+      cursor: pointer;
     }
   }
 }
+__summary {
+  .intro__purchase-details {
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    p {
+      margin: 0;
+    }
+    .fs-little {
+      font-size: 0.6em;
+      color: #555;
+    }
+    .add-to-cart {
+      background-color: #0c6588;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      margin-top: 10px;
+      &:hover {
+        background-color: #000;
+      }
+    }
+    .add-to-wishlist {
+      color: #0c6588;
+      cursor: pointer;
+      font-size: 0.9em;
+      margin-top: 10px;
+    }
+  }
+  .intro__main-specs {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+}
+
 // Description Section
 .description {
   margin-top: 30px;
@@ -197,9 +259,10 @@ h3 {
 
     &-content {
       display: flex;
+      flex-direction: column;
       gap: 20px;
       img {
-        max-width: 200px;
+        max-width: 100%;
         height: auto;
       }
     }
@@ -223,7 +286,7 @@ h3 {
       border-collapse: collapse;
       td {
         padding: 10px;
-        border-bottom: 1px solid #ddd;
+        border: 1px solid #ddd;
         &:first-child {
           font-weight: bold;
           width: 50%;

@@ -9,6 +9,22 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://i.icomoon.io/public/temp/82c6beb5d0/UntitledProject/style.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -26,24 +42,44 @@
       </div>
       <div class="header__main contained">
         <div class="logo">
-          <img src="./assets/images/logo.svg" alt="logo hitech.net" />
+          <img src="rsc/images/logo.svg" alt="logo hitech.net" />
           <p class="logo__brand-name">HiTech.NET</p>
           <p class="logo__brand-desc">Tout le matériel High-Tech</p>
         </div>
         <div class="session">
-          <div class="session__account"><p>Mon compte</p></div>
-          <div class="session__cart"><p>mon panier</p></div>
+          <div class="session__account">
+            <span class="icon-user"></span>
+            <p>Mon compte</p>
+          </div>
+          <div class="session__cart">
+            <span class="icon-stack"></span>
+            <p>mon panier</p>
+          </div>
         </div>
       </div>
       <nav class="nav contained">
-        <button class="nav__button">Ordinateurs</button>
-        <button class="nav__button">Péripheriques & composants</button>
-        <button class="nav__button">Téléphones</button>
-        <button class="nav__button">Objets connectés</button>
+        <button class="nav__button">
+          <span class="icon-display"></span>Ordinateurs
+        </button>
+        <button class="nav__button">
+          <span class="icon-data"></span>Péripheriques & composants
+        </button>
+        <button class="nav__button">
+          <span class="icon-phone"></span>Téléphones
+        </button>
+        <button class="nav__button">
+          <span class="icon-clock"></span>Objets connectés
+        </button>
       </nav>
     </header>
     <main class="contained">
-      <h1>AOC 23.8" LED - 24B1XHS</h1>
+      <h1>AOC 24B1XHS</h1>
+
+      <ul class="anchors">
+        <li><a href="#">Présentation</a></li>
+        <li><a href="#">Descriptif</a></li>
+        <li><a href="#">Caractéristiques techniques</a></li>
+      </ul>
 
       <section class="intro">
         <h2>Présentation</h2>
@@ -60,34 +96,34 @@
           <div class="slider">
             <img
               class="slider__current"
-              src="./assets/images/slider/slide-1-md.jpg"
+              src="rsc/images/slider/slide-1-md.jpg"
               alt="photo de l'ecran vu de face"
             />
             <p class="slider__disclaimer">Photos non contractuelles</p>
             <div class="slider__all-photos-wrapper">
               <img
                 class="slider__little"
-                src="./assets/images/slider/slide-1-md.jpg"
+                src="rsc/images/slider/slide-1-md.jpg"
                 alt="photo de l'ecran"
               />
               <img
                 class="slider__little"
-                src="./assets/images/slider/slide-2-md.jpg"
+                src="rsc/images/slider/slide-2-md.jpg"
                 alt="photo de l'ecran"
               />
               <img
                 class="slider__little"
-                src="./assets/images/slider/slide-3-md.jpg"
+                src="rsc/images/slider/slide-3-md.jpg"
                 alt="photo de l'ecran"
               />
               <img
                 class="slider__little"
-                src="./assets/images/slider/slide-4-md.jpg"
+                src="rsc/images/slider/slide-4-md.jpg"
                 alt="photo de l'ecran"
               />
               <img
                 class="slider__little"
-                src="./assets/images/slider/slide-5-md.jpg"
+                src="rsc/images/slider/slide-5-md.jpg"
                 alt="photo de l'ecran"
               />
             </div>
@@ -97,8 +133,10 @@
               <p>Marque: AOC</p>
               <p>109€94</p>
               <p class="fs-little">dont éco-participation 1€70</p>
-              <button class="add-to-cart">Ajouter au panier</button>
-              <p class="add-to-wishlist"></p>
+              <div class="Adds">
+                <button class="add-to-cart">Ajouter au panier</button>
+                <p class="add-to-wishlist">Ajouter à ma liste d'envie</p>
+              </div>
               <p>Garantie: 2 années vendeur</p>
             </div>
 
@@ -138,7 +176,7 @@
         <article class="description__article">
           <h3>Un moniteur Full HD performant et tout en finesse</h3>
           <div class="description__article-content">
-            <img src="./assets/images/slider/screen.png" alt="" />
+            <img src="rsc/images/slider/screen.png" alt="" />
             <div class="description__article-text">
               <p>
                 Issu de la série B1, le moniteur AOC 24B1XHS dispose de tous les
@@ -158,7 +196,7 @@
         <article class="description__article">
           <h3>Appréciez le design sans contour</h3>
           <div class="description__article-content">
-            <img src="./assets/images/slider/desc-1.jpg" alt="" />
+            <img src="rsc/images/slider/desc-1.jpg" alt="" />
             <div class="description__article-text">
               <p>
                 En plus du look moderne et attrayant qu'il procure, le design
@@ -181,7 +219,7 @@
         <article class="description__article">
           <h3>Tout le confort nécessaire</h3>
           <div class="description__article-content">
-            <img src="./assets/images/slider/desc-2.jpg" alt="" />
+            <img src="rsc/images/slider/desc-2.jpg" alt="" />
             <div class="description__article-text">
               <p>
                 Agréable visuellement et intuitif, ce moniteur dispose également
