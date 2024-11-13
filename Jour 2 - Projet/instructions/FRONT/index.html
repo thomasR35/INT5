@@ -1,81 +1,455 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Document</title>
+    <link rel="stylesheet" href="rsc/css/theme.css" />
     <link
       rel="stylesheet"
-      href="https://i.icomoon.io/public/temp/82c6beb5d0/UntitledProject/style.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Fjalla+One&family=Merienda:wght@300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Fjalla+One&family=Merienda:wght@300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
-      rel="stylesheet"
-    />
-    <link href="rsc/css/normalize.css" rel="stylesheet" />
-    <link href="rsc/css/theme.css" rel="stylesheet" />
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="/js/slippry.min.js"></script>
-    <link rel="stylesheet" href="/css/slippry.css" />
-    <script>
-      src = "js/index.js";
-    </script>
-    <title>HiTech.NET</title>
   </head>
   <body>
-    <div class="pre-header">
-      <p>Option d'affichage / accessibilité</p>
-      <p>Thème: sombre contrasté / clair</p>
-      <p>Interlignage: simple / augmenté</p>
-    </div>
     <header class="header">
-      <img src="rsc/images/logo.svg" alt="Logo de HiTech.NET" />
-      <h1>HiTech.NET</h1>
-      <p>Tout le matériel High-Tech</p>
-      <div>
-        <div><span class="icon-user"></span><br /><span> Mon compte</span></div>
-        <div>
-          <span class="icon-stack"></span><br /><span> Mon panier</span>
+      <div class="header__accessibility contained">
+        <p>Options d'affichage / accessibilité</p>
+        <p>
+          thème:
+          <span class="header__accessibility-btn">sombre contrasté</span>
+          <span class="header__accessibility-btn">clair</span>
+        </p>
+        <p>
+          Interlignage: <span class="header__accessibility-btn">simple</span
+          ><span class="header__accessibility-btn">augmenté</span>
+        </p>
+      </div>
+      <div class="header__main contained">
+        <div class="logo">
+          <img src="./assets/images/logo.svg" alt="logo hitech.net" />
+          <p class="logo__brand-name">HiTech.NET</p>
+          <p class="logo__brand-desc">Tout le matériel High-Tech</p>
+        </div>
+        <div class="session">
+          <div class="session__account"><p>Mon compte</p></div>
+          <div class="session__cart"><p>mon panier</p></div>
         </div>
       </div>
+      <nav class="nav contained">
+        <button class="nav__button">Ordinateurs</button>
+        <button class="nav__button">Péripheriques & composants</button>
+        <button class="nav__button">Téléphones</button>
+        <button class="nav__button">Objets connectés</button>
+      </nav>
     </header>
-    <nav class="nav">
-      <ul>
-        <li><span class="icon-display"></span> <span> Ordinateurs</span></li>
-        <li>
-          <span class="icon-data"></span>
-          <span> Périphériques & Composants</span>
-        </li>
-        <li><span class="icon-phone"></span> <span> Téléphones</span></li>
-        <li><span class="icon-clock"></span> <span> Objets connectés</span></li>
-      </ul>
-    </nav>
-    <main class="main">
-      <section>
-        <h2>AOC 24B1XHS</h2>
-        <ul>
-          <li><a href="#">Présentation</a></li>
-          <li><a href="#">Descriptif</a></li>
-          <li><a href="#">Caracteristiques techniques</a></li>
-        </ul>
-      </section>
-      <section>
+    <main class="contained">
+      <h1>AOC 23.8" LED - 24B1XHS</h1>
+
+      <section class="intro">
         <h2>Présentation</h2>
-        <p>1920x1080 pixels</p>
-        <p>7 ms</p>
-        <p>Format large 16/9</p>
-        <p>Dalle IPS</p>
-        <p>HDMI</p>
-        <p>VGA</p>
-        <p>Noir</p>
-        
+        <div class="intro__tag-container">
+          <p class="intro__tag">1920 x 1080 pixels</p>
+          <p class="intro__tag">7 ms</p>
+          <p class="intro__tag">Format large 16/9</p>
+          <p class="intro__tag">Dalle IPS</p>
+          <p class="intro__tag">HDMI</p>
+          <p class="intro__tag">VGA</p>
+          <p class="intro__tag">Noir</p>
+        </div>
+        <div class="intro__content">
+          <div class="slider">
+            <img
+              class="slider__current"
+              src="./assets/images/slider/slide-1-md.jpg"
+              alt="photo de l'ecran vu de face"
+            />
+            <p class="slider__disclaimer">Photos non contractuelles</p>
+            <div class="slider__all-photos-wrapper">
+              <img
+                class="slider__little"
+                src="./assets/images/slider/slide-1-md.jpg"
+                alt="photo de l'ecran"
+              />
+              <img
+                class="slider__little"
+                src="./assets/images/slider/slide-2-md.jpg"
+                alt="photo de l'ecran"
+              />
+              <img
+                class="slider__little"
+                src="./assets/images/slider/slide-3-md.jpg"
+                alt="photo de l'ecran"
+              />
+              <img
+                class="slider__little"
+                src="./assets/images/slider/slide-4-md.jpg"
+                alt="photo de l'ecran"
+              />
+              <img
+                class="slider__little"
+                src="./assets/images/slider/slide-5-md.jpg"
+                alt="photo de l'ecran"
+              />
+            </div>
+          </div>
+          <div class="intro__summary">
+            <div class="intro__purchase-details">
+              <p>Marque: AOC</p>
+              <p>109€94</p>
+              <p class="fs-little">dont éco-participation 1€70</p>
+              <button class="add-to-cart">Ajouter au panier</button>
+              <p class="add-to-wishlist"></p>
+              <p>Garantie: 2 années vendeur</p>
+            </div>
+
+            <p>
+              Un écran 23,8" Full HD et sans bords; c'est sûrement votre futur
+              moniteur pour la maison ou le bureau. AOC vous propose le 24B1XHS,
+              un produit élégant au look doté d'une dalle VA avec un temps de
+              réponse rapide de 7 ms en résolution 1920 x 1080 pixels. Cet écran
+              WLED très fonctionnel offre un contenu avec un fréquence de 60 Hz,
+              idéal pour tous les usages du quotidien.
+            </p>
+
+            <ul class="intro__main-specs">
+              <li>
+                Écran large de 23.8" avec résolution Full HD (1920 x 1080)
+              </li>
+              <li>
+                Des couleurs riches et nuancées avec un contraste dynamique de
+                20.000.000:1 (typique 1000:1)
+              </li>
+              <li>Temps de réponse de 7 ms</li>
+              <li>Dalle IPS</li>
+              <li>Luminosité 250 cd/m²</li>
+              <li>Modes Flicker-Free et Anti-lumière bleue (Low blue mode)</li>
+              <li>Connecteurs : HDMI 1.4, VGA</li>
+              <li>Design sans contour & profil plat</li>
+              <li>Consommation d'énergie modeste : 25 Watts</li>
+              <li>Dimensions (avec support) : 419.8 x 540.1 x 186.8 mm</li>
+              <li>Poids : 2.48 kg</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="description">
+        <h2>Descriptif</h2>
+
+        <article class="description__article">
+          <h3>Un moniteur Full HD performant et tout en finesse</h3>
+          <div class="description__article-content">
+            <img src="./assets/images/slider/screen.png" alt="" />
+            <div class="description__article-text">
+              <p>
+                Issu de la série B1, le moniteur AOC 24B1XHS dispose de tous les
+                atouts indispensables pour offrir une expérience utilisateur
+                agréable. Son écran Full HD de 23.8" s'accompagne d'une dalle
+                IPS ainsi que d'un temps de réponse de 7 ms pour une image
+                toujours performante. Aussi, le 24B1XHS séduit par son profil
+                plat et son design sans contour qui favorise le plaisir visuel
+                et l'immersion. Ce moniteur WLED trouvera facilement une place
+                de choix sur votre bureau pour toutes vos utilisations
+                quotidiennes.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="description__article">
+          <h3>Appréciez le design sans contour</h3>
+          <div class="description__article-content">
+            <img src="./assets/images/slider/desc-1.jpg" alt="" />
+            <div class="description__article-text">
+              <p>
+                En plus du look moderne et attrayant qu'il procure, le design
+                sans contour permet des configurations à plusieurs écrans sans
+                interruption. Votre curseur, vos fenêtres ne sont plus perdus
+                dans les abysses sombres des contours lorsque plusieurs écrans
+                sont placés les uns à côté des autres.
+              </p>
+
+              <p>
+                Le profil plat de ce moniteur AOC offre de nombreux avantages.
+                Très élégant sous tous les angles, il devient un choix idéal
+                dans les espaces publics. Sa finesse et sa conception moderne
+                lui permettent d'occuper moins de place sur le bureau.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="description__article">
+          <h3>Tout le confort nécessaire</h3>
+          <div class="description__article-content">
+            <img src="./assets/images/slider/desc-2.jpg" alt="" />
+            <div class="description__article-text">
+              <p>
+                Agréable visuellement et intuitif, ce moniteur dispose également
+                d'une dalle IPS. Cette dernière reproduit des couleurs
+                éclatantes et offre de très larges angles de vue. De cette
+                façon, les images gardent toujours un excellent aspect et une
+                parfaite précision, quel que soit l'angle auquel vous regardez
+                l'écran.
+              </p>
+              <p>
+                Vous voulez utiliser votre écran même dans un environnement très
+                lumineux, à côté d'une fenêtre au soleil par exemple ? La haute
+                luminosité de 250 cd/m² garantit une bonne visibilité, même dans
+                des conditions difficiles.
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="product-details">
+        <h2>Caractéristiques techniques</h2>
+        <article class="product-details__article">
+          <h3>Affichage</h3>
+          <table>
+            <tr>
+              <td>Taille de l'écran</td>
+              <td>23.8 pouces</td>
+            </tr>
+            <tr>
+              <td>Format de l'écran</td>
+              <td>16/9</td>
+            </tr>
+            <tr>
+              <td>Type de Dalle</td>
+              <td>Dalle IPS</td>
+            </tr>
+            <tr>
+              <td>Technologie LCD</td>
+              <td>IPS</td>
+            </tr>
+            <tr>
+              <td>Résolution Max</td>
+              <td>1920 x 1080 pixels</td>
+            </tr>
+
+            <tr>
+              <td>Dot Pitch</td>
+              <td>0.2745 mm</td>
+            </tr>
+
+            <tr>
+              <td>Luminosité</td>
+              :
+              <td>250 cd/m²</td>
+            </tr>
+            <tr>
+              <td>Contraste</td>
+              :
+              <td>20000000 /1</td>
+            </tr>
+            <tr>
+              <td>Temps de réponse</td>
+              :
+              <td>7 ms</td>
+            </tr>
+            <tr>
+              <td>Angle de vision (horizontal)</td>
+              :
+              <td>178 Degré(s)</td>
+            </tr>
+            <tr>
+              <td>Angle de vision (vertical)</td>
+              :
+              <td>178 Degré(s)</td>
+            </tr>
+            <tr>
+              <td>Dalle mate/antireflets</td>
+              : Oui
+            </tr>
+            <tr>
+              <td>NVIDIA G-SYNC</td>
+              :
+              <td>Non</td>
+            </tr>
+            <tr>
+              <td>Adaptive-Sync</td>
+              :
+              <td>Non</td>
+            </tr>
+            <tr>
+              <td>AMD FreeSync</td>
+              :
+              <td>Non</td>
+            </tr>
+            <tr>
+              <td>Flicker-Free</td>
+              :
+              <td>Oui</td>
+            </tr>
+            <tr>
+              <td>Anti-lumière bleue</td>
+              :
+              <td>Oui</td>
+            </tr>
+          </table>
+        </article>
+        <article class="product-details__article">
+          <h3>Ecran</h3>
+          <table>
+            <tr>
+              <td>Type d'écran</td>
+              <td>LED</td>
+            </tr>
+            <tr>
+              <td>Ecran large</td>
+              <td>Oui</td>
+            </tr>
+            <tr>
+              <td>Ecran incurvé</td>
+              <td>Non</td>
+            </tr>
+            <tr>
+              <td>Borderless</td>
+              <td>Oui</td>
+            </tr>
+            <tr>
+              <td>Compatible 3D</td>
+              <td>Non</td>
+            </tr>
+            <tr>
+              <td>Ecran tactile</td>
+              <td>Non</td>
+            </tr>
+            <td>
+              <tr>
+                <td>Fréquence verticale mini</td>
+                <td>60 Hz</td>
+              </tr>
+            </td>
+            <tr>
+              <td>Type d'activités</td>
+              <td>Bureautique</td>
+            </tr>
+          </table>
+        </article>
+
+        <article class="product-details__article">
+          <h3>Ergonomie</h3>
+          <table>
+            <tr>
+              -
+              <td>Pivot</td>
+              :
+              <td>Non</td>
+            </tr>
+            <tr>
+              -
+              <td>Pied réglable en hauteur</td>
+              :
+              <td>Non</td>
+            </tr>
+            <tr>
+              -
+              <td>Pied amovible</td>
+              :
+              <td>Oui</td>
+            </tr>
+            <tr>
+              -
+              <td>Fixation VESA</td>
+              :
+              <td>N/A</td>
+            </tr>
+            <tr>
+              -
+              <td>Angle inclinaison vers l'arrière (haut):</td>
+              <td>21.5 Degré(s)</td>
+            </tr>
+            <tr>
+              -
+              <td>Angle inclinaison vers l'avant (bas):</td>
+              <td>3.5 Deg</td>
+            </tr>
+          </table>
+        </article>
+        <article class="product-details__article">
+          <h3>Connectique</h3>
+          <table>
+            <tr>
+              <td>Entrées vidéo:</td>
+              <td>1 X HDMI Femelle, 1 X VGA (D-sub 15 Femelle)</td>
+            </tr>
+
+            <tr>
+              <td>Entrée audio</td>
+              <td>Aucun(e)</td>
+            </tr>
+            <tr>
+              <td>Sorties audio</td>
+              <td>1 X Line OUT (Jack 3.5mm Femelle)</td>
+            </tr>
+          </table>
+        </article>
+        <article class="product-details__article">
+          <h3>Multimédia</h3>
+          <table>
+            <tr>
+              <td>H.P. Intégrés</td>
+              <td>Non</td>
+            </tr>
+            <tr>
+              <td>Webcam</td>
+              <td>Non</td>
+            </tr>
+            <tr>
+              <td>Tuner TV</td>
+              <td>Non</td>
+            </tr>
+          </table>
+        </article>
+        <article class="product-details__article">
+          <h3>Caractéristiques physiques</h3>
+          <table>
+            <tr>
+              <td>Couleur</td>
+              <td>Noir</td>
+            </tr>
+            <tr>
+              <td>Largeur</td>
+              <td>540.1 mm</td>
+            </tr>
+            <tr>
+              <td>Hauteur</td>
+              <td>417.4 mm</td>
+            </tr>
+            <tr>
+              <td>Profondeur</td>
+              <td>186.8 mm</td>
+            </tr>
+            <tr>
+              <td>Poids</td>
+              <td>2.48 kg</td>
+            </tr>
+            <tr>
+              <td>Pack multi-écrans</td>
+              <td>Non</td>
+            </tr>
+          </table>
+        </article>
+        <article class="product-details__article">
+          <h3>Alimentation</h3>
+          <table>
+            <tr>
+              <td>Consommation</td>
+              <td>25 W</td>
+            </tr>
+            <tr>
+              <td>Consommation en veille</td>
+              <td>0.5 W</td>
+            </tr>
+            <tr>
+              <td>Alimentation interne</td>
+              <td>Non</td>
+            </tr>
+          </table>
+        </article>
+      </section>
     </main>
   </body>
 </html>
